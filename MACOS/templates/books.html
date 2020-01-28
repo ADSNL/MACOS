@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>MACOS:Mock Amazon Customer Ordering System</title>
+	<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Background Image-->
+<div class="bg">
+	<h1> Mock Amazon Customer Ordering System </h1>
+	<h2> Books </h2>
+	<div class="container">
+		<div class="row">
+
+      		<div class="leftpane col-sm-6 col-md-6 col-lg-6">
+				<table>
+					{% for mydata in data %}
+					<tr>
+						<td><label for="bookID">Book ID: </label></td>
+						<td><input type="text" name="bookID" value={{mydata[0]}}></td>
+					</tr>
+					<tr>
+						<td><label for="bookTitle">Book Title: </label></td>
+						<td><input type="text" name="bookTitle" value="{{mydata[1]}}"></td>
+					</tr>
+					<tr>
+						<td><label for="isbn10">ISBN 10: </label></td>
+						<td><input type="text" name="isbn10" value="{{mydata[2]}}"></td>
+					</tr>
+					<tr>
+						<td><label for="isbn13">ISBN 13: </label></td>
+						<td><input type="text" name="isbn13" value="{{mydata[3]}}"></td>
+					</tr>
+					<tr>
+						<td><label for="bookGenreName">Book Genre Name: </label></td>
+						<td><input type="text" name="bookGenreName" value="{{mydata[4]}}"> </td>
+					</tr>
+					<tr>
+						<td><label for="bookPublisherName">Book Publisher Name: </label></td>
+						<td><input type="text" name="bookPublisherName" value="{{mydata[5]}}"></td>
+					</tr>
+					{% endfor %}
+				</table>
+      		</div>
+
+			<div class="bookrightpane col-sm-6 col-md-6 col-lg-6">
+				<table>
+					<tr>
+						<td><label for="bookAuthor">Book Authors: </label></td>
+						<td><input type="text" name="bookAuthor" value=""></td>
+					</tr>
+					<tr>
+							<td><label for="bookMedia">Book Media: </label></td>
+							<td><input type="text" name="bookMedia" value=""></td>
+					</tr>
+				</table>
+      		</div>
+
+			<div class="bookbtn col-sm-12 col-md-12 col-lg-12">
+				<form>
+
+					<table>
+						<tr>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Previous</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="/books/{{data[0][0]+1}}">Next</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Add</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Delete</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Find</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Print</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="/products">Close</button></td>
+						</tr>
+					</table>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

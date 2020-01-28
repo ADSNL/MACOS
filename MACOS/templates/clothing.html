@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>MACOS:Mock Amazon Customer Ordering System</title>
+  	<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Background Image-->
+<div class="bg">
+	<h1> Mock Amazon Customer Ordering System </h1>
+	<h2> Clothing </h2>
+	<div class="container">
+		<div class="row">
+			<div class="leftpane col-sm-6 col-md-6 col-lg-6">
+				<table>
+					<tr>
+						<td><label for="clothingID">Clothing ID: </label></td>
+						<td><input type="text" name="clothingID" value=""></td>
+					</tr>
+					<tr>
+							<td><label for="clothingName">Clothing Name: </label></td>
+							<td><input type="text" name="clothingName" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="clothingBrandName">Clothing Brand Name: </label></td>
+						<td><input type="text" name="clothingBrandName" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="clothingColorName">Clothing Color Name: </label></td>
+						<td><input type="text" name="clothingColorName" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="clothingSize">Clothing Size: </label></td>
+						<td><input type="text" name="clothingSize" value=""> </td>
+					</tr>
+				</table>
+      		</div>
+
+			<div class="clothrightpane col-sm-6 col-md-6 col-lg-6">
+				<table>
+					<tr>
+						<td><label for="clothingType">Clothing Type: </label></td>
+						<td><input type="text" name="clothingType" value=""></td>
+					</tr>
+					<tr>
+							<td><label for="asin">ASIN: </label></td>
+							<td><input type="text" name="asin" value=""></td>
+					</tr>
+					<tr>
+							<td><label for="itemModelNo">Item Model Number: </label></td>
+							<td><input type="text" name="asin" value=""></td>
+					</tr>
+					<tr>
+							<td><label for="price">Price: </label></td>
+							<td><input type="text" name="price" value=""></td>
+					</tr>
+				</table>
+      		</div>
+
+			<div class="clothbtn col-sm-12 col-md-12 col-lg-12">
+				<form>
+					<table>
+						<tr>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Previous</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Next</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Add</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Delete</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Find</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="">Print</button></td>
+							<td><button class="btn btn-default nav" type="submit" formaction="/products">Close</button></td>
+						</tr>
+					</table>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

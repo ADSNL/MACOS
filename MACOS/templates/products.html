@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>MACOS:Products</title>
+  	<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Background Image-->
+	<div class="bg">
+		<h1> Mock Amazon Customer Ordering System </h1>
+		<h2> Products </h2>
+		<div class="container">
+			<div class="row">
+				<!--Nav Buttons-->
+				<div class="btnProduct">
+					<form>
+						<table>
+							<tr>
+								<td><button class="btn btn-default pack" type="submit" formaction="/books/1000001">Books</button></td>
+								<td><button class="btn btn-default pack" type="submit" formaction="/clothing">Clothing</button></td>
+							</tr>
+							<tr>
+								<td><button class="btn btn-default pack" type="submit" formaction="/kitchen">Kitchen</button></td>
+								<td><button class="btn btn-default pack" type="submit" formaction="/makeup">Makeup</button></td>
+							</tr>
+							<tr>
+								<td><button class="btn btn-default pack" type="submit" formaction="/movies">Movies</button></td>
+								<td><button class="btn btn-default pack" type="submit" formaction="/pets">Pets</button></td>
+							</tr>
+
+						</table>
+
+						<div class="btnMainMenu">
+							<button class="btn btn-default pack" type="submit" formaction="/">Main Menu</button>
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

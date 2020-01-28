@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>MACOS:Mock Amazon Customer Ordering System</title>
+	<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Background Image-->
+	<div class="bg">
+		<h1> Mock Amazon Customer Ordering System </h1>
+		<h2> Makeup </h2>
+		<div class="container">
+			<div class="row">
+
+				<div class="leftpane col-sm-6 col-md-6 col-lg-6">
+					<table>
+						<tr>
+							<td><label for="makeupID">Makeup ID: </label></td>
+							<td><input type="text" name="makeupID" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="makeupName">Makeup Name: </label></td>
+							<td><input type="text" name="makeupName" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="makeupVol">Makeup Volume: </label></td>
+							<td><input type="text" name="makeupVol" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="attributeName">Attribute Name: </label></td>
+							<td><input type="text" name="attributeName" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="brandName">Brand Name: </label></td>
+							<td><input type="text" name="brandName" value=""> </td>
+						</tr>
+						<tr>
+							<td><label for="categoryName">Category Name: </label></td>
+							<td><input type="text" name="categoryName" value=""></td>
+						</tr>
+					</table>
+      			</div>
+
+				<div class="makeuprightpane col-sm-6 col-md-6 col-lg-6">
+					<table>
+						<tr>
+							<td><label for="muAsin">ASIN: </label></td>
+							<td><input type="text" name="muAsin" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="muColors">Makeup Colors Lookup: </label></td>
+							<td><input type="text" name="muColors" value=""></td>
+						</tr>
+					</table>
+      			</div>
+
+				<div class="mubtn col-sm-12 col-md-12 col-lg-12">
+					<form>
+
+						<table>
+							<tr>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Previous</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Next</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Add</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Delete</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Find</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Print</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="/products">Close</button></td>
+							</tr>
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

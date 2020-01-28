@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>MACOS:Mock Amazon Customer Ordering System</title>
+	<link href="{{url_for('static', filename = 'css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- Background Image-->
+	<div class="bg">
+		<h1> Mock Amazon Customer Ordering System </h1>
+		<h2> Pets </h2>
+		<div class="container">
+			<div class="row">
+				<div class="leftpane col-sm-6 col-md-6 col-lg-6">
+					<table>
+						<tr>
+							<td><label for="petID">Pets ID: </label></td>
+							<td><input type="text" name="petID" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="petCategoryName">Pets Category Name: </label></td>
+							<td><input type="text" name="petCategoryName" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="petSupplier">Pets Supplier Name: </label></td>
+							<td><input type="text" name="petSupplier" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="petDimensions">Pets Dimensions: </label></td>
+							<td><input type="text" name="petDimensions" value=""></td>
+						</tr>
+					</table>
+      			</div>
+
+				<div class="petsrightpane col-sm-6 col-md-6 col-lg-6">
+					<table>
+						<tr>
+							<td><label for="pAsin">ASIN: </label></td>
+							<td><input type="text" name="pAsin" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="pitemModelNo">Pet Model Number: </label></td>
+							<td><input type="text" name="pitemModelNo" value=""></td>
+						</tr>
+						<tr>
+							<td><label for="price">Price: </label></td>
+							<td><input type="text" name="price" value=""></td>
+						</tr>
+					</table>
+      			</div>
+
+				<div class="petbtn col-sm-12 col-md-12 col-lg-12">
+					<form>
+						<table>
+							<tr>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Previous</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Next</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Add</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Delete</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Find</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="">Print</button></td>
+								<td><button class="btn btn-default nav" type="submit" formaction="/products">Close</button></td>
+							</tr>
+						</table>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

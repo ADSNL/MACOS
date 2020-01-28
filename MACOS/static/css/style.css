@@ -1,0 +1,160 @@
+<style>
+
+#maintable{
+	align-items: center;
+}
+
+button,td, tr{
+	padding:15px;
+
+}
+
+div.bg h1, h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.btnMain{
+  padding-top: 320px;
+  padding-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.btnProduct{
+  padding-top: 270px;
+  padding-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btnMainMenu{
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+
+button.pack{
+
+    color: white;
+    border-radius: 20px;
+    /* border-color: #00b2b2; */
+		border-color: white;
+    font-size: 20px;
+		width: 200px;
+		margin: auto;
+		text-align: center;
+}
+
+button.nav{
+	color: white;
+	border-radius: 20px;
+	/* border-color: #00b2b2; */
+	border-color: white;
+	font-size: 16px;
+	width: 140px;
+	margin: auto;
+	text-align: center;
+}
+
+div.bookbtn{
+		margin-top: 285px;
+		display: flex;
+		justify-content: center;
+}
+
+div.clothbtn{
+		margin-top: 350px;
+		display: flex;
+		justify-content: center;
+}
+
+div.kitchenbtn{
+		margin-top: 420px;
+		display: flex;
+		justify-content: center;
+}
+
+div.mubtn{
+	margin-top: 280px;
+	display: flex;
+	justify-content: center;
+}
+
+div.moviebtn{
+	margin-top: 420px;
+	display: flex;
+	justify-content: center;
+}
+
+div.petbtn{
+	margin-top: 420px;
+	display: flex;
+	justify-content: center;
+}
+
+div.custbtn{
+	margin-top: 250px;
+	display: flex;
+	justify-content: center;
+}
+
+div.bg{
+	/* background-image: url('mainbgimg.jpg'); */
+	background-image: url(../images/mainbgimg1.png);
+  background-position: center;
+  color: #ffffff;
+  align-items: center;
+	height: 1067px;
+	background-size: cover;
+	/* height: 100%;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+}
+
+label{
+	font-size: 20px;
+	color: #003661;
+	font-weight: bold;
+}
+
+div.leftpane{
+	padding-top: 200px;
+}
+
+div.cleftpane{
+	padding-top: 100px;
+}
+
+div.bookrightpane{
+	padding-top:  300px;
+}
+
+div.clothrightpane{
+	padding-top:  210px;
+}
+
+div.kitchenrightpane{
+	padding-top:  250px;
+}
+
+div.makeuprightpane{
+	padding-top:  300px;
+}
+
+div.moviesrightpane{
+	padding-top:  260px;
+}
+
+div.petsrightpane{
+	padding-top:  230px;
+}
+
+div.custrightpane{
+	padding-top: 100px;
+}
+
+</style>
